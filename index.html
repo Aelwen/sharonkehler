@@ -163,14 +163,14 @@
     // GET MODAL //
     var modal = document.getElementById("myModal");
     // GET IMAGE and INSERT INTO MODAL //
-    var images = document.getElementsByClassName("myImages"); //[0];
+    var images = document.getElementsByClassName("galleryimg");
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
 
     // GO THROUGH ALL IMAGES WITH CUSTOM CLASS//
     for (var i = 0; i < images.length; i++) {
         var img = images[i];
-        //attach our click listener for this image
+        //attach click listener for the image
         img.onclick = function(evt) {
             modal.style.display = "block";
             modalImg.src = this.src;
