@@ -1,0 +1,325 @@
+/*
+Theme Name: Book Launch
+Theme URI: http://sharonkehler.com
+Author: Chloe Funk / blueberryfoxtrot
+Author URI: http://wordpress.org/
+Description: The 2019 theme for WordPress that is a single page static book, author, or product launch theme. A hero image up top, a pre-order button, a display image of the product with a description, a video section, and a navigation section. 
+Version: 1.0
+Text Domain: Book Launch
+*/
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column; 
+    }
+    section {
+        padding: 0px;;
+    }
+	.responsive-img {
+		width: 100%;
+	}
+	body {
+		margin: 0 auto;
+	}
+}
+
+/* Global Style Layout */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#d8d5d2, #d6cec9);
+}
+
+header {
+	background: url("http://sharonkehler.com/wp-content/uploads/2019/07/bluemountain.jpg") no-repeat center;
+	filter: sepia(45%);
+	background-size: cover;
+	overflow: hidden;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	text-align: center; 
+	color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+	letter-spacing: 10px;
+}
+
+
+/* Navigation Menus */
+
+nav {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px 10px;
+}
+li {
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #a7ccc8;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #1f1d1d;
+}
+a:visited {
+    text-decoration: none;
+    color: #1a9eaf;
+}
+
+/* Button Styles */
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.myButton {
+	background-color: #33322e;
+	-moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    display: block;
+	border-radius: 28px;
+	cursor: pointer;
+	color: #e0ded0;
+	font-family: 'Roboto', 'sans-serif';
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #030303;
+}
+.myButton:hover {
+	background-color:#75726e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Hero Image Styles */
+.hero{
+	background: url("http://sharonkehler.com/wp-content/uploads/2019/07/bluemountain.jpg") no-repeat center;
+	filter: sepia(45%);
+	background-size: cover;
+	overflow: hidden;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center; 
+	color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+	letter-spacing: 10px;
+}	
+
+/* Main Body Styles */
+
+body {
+	font-family: 'Biryani', sans-serif;
+	font-size: .95em;
+    word-spacing: 5px;
+    display: block;
+    overflow-x: hidden;
+}
+h2 {
+    display: flex;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    justify-content: center;
+}
+main {
+    display: block;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5%;
+    padding: 50px;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.col {
+    width: 50%;
+}
+
+/* Negative Backdrop Styles */ 
+
+.link-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stretch-bkg {
+    background-color: #2b2828cb;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+} 
+
+/* Gallery Styles TEST */
+
+/* Style the Image Used to Trigger the Modal */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+	width: 100%;
+	max-width: 250px;
+}
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* Image Styles */
+
+.responsive-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75); 
+}
+.col-1 {
+    text-align: center;
+}
+
+/* Video Styles */
+
+video {
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.title {
+    margin: 5px;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #464040;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+}
+footer .copyright {
+    top: -8px;
+    margin-right: 20px;
+    font-size: .75em;
+  }
