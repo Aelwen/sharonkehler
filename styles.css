@@ -169,6 +169,9 @@ section {
     justify-content: center;
 }
 .bottom-card{
+	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
 	margin: -5%;
 	padding: -50px;
 }
