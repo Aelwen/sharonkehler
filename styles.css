@@ -151,17 +151,17 @@ section {
     padding: 50px;
     justify-content: center;
 }
-section .link-card-end {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .col {
     width: 50%;
