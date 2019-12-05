@@ -46,7 +46,6 @@ header {
 	background-size: cover;
 	overflow: hidden;
 	height: 100vh;
-	position: fixed;
 }
 .title {
 	text-align: center; 
