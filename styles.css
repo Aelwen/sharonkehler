@@ -46,6 +46,7 @@ header {
 	background-size: cover;
 	overflow: hidden;
 	height: 100vh;
+	position: fixed;
 }
 .title {
 	text-align: center; 
@@ -53,7 +54,7 @@ header {
     	font-family: 'Roboto', sans-serif;
     	font-weight: 100;
 	letter-spacing: 10px;
-	display: inline-block;
+	position: absolute;
 }
 
 /* Navigation Menus */
