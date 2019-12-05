@@ -303,12 +303,15 @@ video {
 
 footer {
     background-color: #464040;
-    text-align: center;
+    text-align: right;
     height: 50px;
     padding: 10px;
 }
-footer .copyright {
+footer .watermark {
     top: -8px;
     margin-right: 20px;
     font-size: .75em;
   }
+.footer {
+	padding-bottom: -50px;
+}
