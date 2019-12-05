@@ -151,6 +151,12 @@ section {
     padding: 50px;
     justify-content: center;
 }
+section .link-card-end {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -167,13 +173,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.bottom-card{
-	display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-	margin: -5%;
-	padding: -50px;
 }
 .stretch-bkg {
     background-color: #2b2828cb;
