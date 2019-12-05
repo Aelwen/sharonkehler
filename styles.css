@@ -46,13 +46,15 @@ header {
 	background-size: cover;
 	overflow: hidden;
 	height: 100vh;
+}
+.title {
 	text-align: center; 
 	color: #fff;
     	font-family: 'Roboto', sans-serif;
     	font-weight: 100;
 	letter-spacing: 10px;
+	display: inline-block;
 }
-
 
 /* Navigation Menus */
 
