@@ -168,6 +168,10 @@ section {
     flex-direction: column;
     justify-content: center;
 }
+.bottom-card{
+	margin: -5%;
+	padding: -50px;
+}
 .stretch-bkg {
     background-color: #2b2828cb;
     width: 100vw;
